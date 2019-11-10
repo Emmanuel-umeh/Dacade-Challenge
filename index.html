@@ -270,10 +270,17 @@
       </div>
       <center>
         <div><input type="number" id= "{{id}}" class= "tipValue" placeholder = "Tip the owner "></div>
-      <div><button id= "{{id}}" class="btn-success tipbutton">Fund Project</button></div>
+      <div><button id= "{{id}}" onclick="myFunction()" class="btn-success tipbutton">Fund Project</button></div>
 
       
-        
+    
+
+      <script>
+      function myFunction() {
+        alert("I am an alert box!");
+      }
+      </script>
+      
         
       </center>
     {{/ProjectArray}}
