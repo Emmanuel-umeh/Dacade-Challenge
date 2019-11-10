@@ -207,7 +207,10 @@ $('#body').on('click', '.tipbutton', async function(event){
   
   await contractInstance.methods.tipProject(dataIndex, tipValues, { amount: tipValues }).catch(console.error);
 
-  window.alert("Thank you for the tip")
+      function myFunction() {
+        alert("I am an alert box!");
+      }
+    
   console.log("Tipped successfully")
 
   $('.tipValue').val('');
